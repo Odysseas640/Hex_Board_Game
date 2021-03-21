@@ -1,0 +1,21 @@
+Execution example:
+make
+./hex -n 4 -d 4
+
+There are 4 command line arguments:
+-n <size> : Set the size of the board, from 4 to 26.
+-d <difficulty> : Set difficulty level.
+-b : User has the color black and plays second. Otherwise user has the color white and plays first.
+-s : Swap rule active
+
+How to play:
+play <move> : User makes a move. Example : play A1.
+cont : Tell the computer to make its move.
+undo : User can undo their moves. The computer's moves are undone as well.
+suggest : Computer suggests a move to the player.
+level [<difficulty>] : User chooses difficulty level (how deep the minimax recursion goes). If no number is given, the current difficulty level is printed.
+swap : If user plays second, for their first move, they can undo the computer's move and make it themselves, to cancel the computer's advantage from playing first.
+save <statefile> : Save current game state in a file.
+load <statefile> : Load a game state from a file
+showstate : Print game board.
+quit : Quit program
